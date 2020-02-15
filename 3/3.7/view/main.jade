@@ -1,0 +1,43 @@
+include header
+        .span
+             div.navbar.navbar-inverse.navbar-fixed-top
+                div.navbar-inner
+                    div.container
+                        a.btn.btn-navbar(data-toggle="collapse",data-target=".nav-collapse")
+                            span.icon-bar
+                            span.icon-bar
+                            span.icon-bar
+                        a.brand(href="javascript:void(0)")  歡迎 #{user}
+                        div.nav-collapse.collapse
+                            ul.nav
+                                li
+                                    a(href="javascript:void(0)")  登出
+        .span2.offset
+            ul.nav.nav-list.online_list
+                li.nav-header
+                    h5  線上使用者
+            ul.nav.nav-list.online_list.friend_list
+
+        .span8.offset0.5
+            ul.nav.nav-tabs
+                li.active
+                    a(href="javascript:void(0)")    直播
+                li
+                    a(href="javascript:void(0)")    圖片
+                li
+                    a(href="javascript:void(0)")    統計
+            div.hero-unit.live_area
+                ul
+                    li
+                        span.icon-user
+                        span.live_user_name.text-success
+                            [danhuang]
+                        span.live_message.text-info message
+        div.span2.offset1
+            h5 微網誌分享
+            textarea.span4.weibo_share
+            div.span4
+                span.btn.btn-info   騰訊微網誌
+                span.btn.offset1.btn-warning   新浪微網誌
+        script(src="static/js/main.js")
+include footer
